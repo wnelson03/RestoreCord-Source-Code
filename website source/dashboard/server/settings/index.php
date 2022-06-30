@@ -87,7 +87,7 @@ $isadmin = $row['admin'];
 
     {
 
-        $result = mysqli_query($link, "SELECT * FROM `servers` WHERE `owner` = '$username' AND `banned` IS NULL"); // select all apps where owner is current user
+        $result = mysqli_query($link, "SELECT * FROM `servers` WHERE `owner` = '$username'"); // select all apps where owner is current user
         if (mysqli_num_rows($result) > 0) // if the user already owns an app, proceed to change app or load only app
 
         {
