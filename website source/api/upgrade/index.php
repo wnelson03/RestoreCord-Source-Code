@@ -3,7 +3,7 @@ include '../../includes/connection.php';
 
 $payload = file_get_contents('php://input');
 
-$secret = "shoppyWebhookSecretHere"; // replace with your webhook secret
+$secret = $ShoppySecret; // replace with your webhook secret
 $header_signature = $_SERVER["HTTP_X_SHOPPY_SIGNATURE"]; // get our signature header
 
 $signature = hash_hmac('sha512', $payload, $secret);

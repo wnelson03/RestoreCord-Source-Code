@@ -121,11 +121,11 @@ $isadmin = $row['admin'];
                         <!-- create new -->
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle waves-effect waves-dark" href="https://restorecord.com/discord/" target="discord"> <i class="mdi mdi-discord font-24"></i>
+						<a class="nav-link dropdown-toggle waves-effect waves-dark" href="../../../discord/" target="discord"> <i class="mdi mdi-discord font-24"></i>
 						</a>
 						</li>
 						<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle waves-effect waves-dark" href="https://restorecord.com/telegram/" target="telegram"> <i class="mdi mdi-telegram font-24"></i>
+						<a class="nav-link dropdown-toggle waves-effect waves-dark" href="../../../telegram/" target="telegram"> <i class="mdi mdi-telegram font-24"></i>
 						</a>
 						</li>
                         <!-- ============================================================== -->
