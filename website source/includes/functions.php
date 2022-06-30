@@ -24,7 +24,7 @@ function heador()
 		<p class="mb-4">Name:
 			<br><?php echo $_SESSION['server_to_manage']; ?><br />
 			<div class="mb-4">Verify Link:
-			<br><a href="<?php echo "https://restorecord.com/verify/" . $_SESSION['username'] . "/" . $_SESSION['server_to_manage']; ?>" style="color:#00FFFF;" target="verifylink"><?php echo "https://restorecord.com/verify/" . $_SESSION['username'] . "/" . $_SESSION['server_to_manage']; ?></a><br />
+                <br><a href="<?php echo "https://". ($_SERVER['HTTP_HOST'] ?? $_SERVER['SERVER_NAME']) . "/verify/" . $_SESSION['username'] . "/" . $_SESSION['server_to_manage']; ?>" style="color:#00FFFF;" target="verifylink"><?php echo "https://". ($_SERVER['HTTP_HOST'] ?? $_SERVER['SERVER_NAME']) . "/verify/" . $_SESSION['username'] . "/" . $_SESSION['server_to_manage']; ?></a><br />
 			</div><a style="color:#4e73df;cursor: pointer;" id="mylink">Change</a>
 			<button style="border: none;padding:0;background:0;color:#FF0000;padding-left:5px;" name="deleteserver" onclick="return confirm('Are you sure you want to delete server and all associated members?')">Delete</button>
 		</p>
@@ -141,18 +141,18 @@ function sidebar($admin)
 {
 	?>
 	<li class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i> <span class="hide-menu">Server</span></li>
-	<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="https://restorecord.com/dashboard/server/settings/" aria-expanded="false"><i data-feather="settings"></i><span class="hide-menu">Settings</span></a></li> 
-	<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="https://restorecord.com/dashboard/server/members/" aria-expanded="false"><i data-feather="users"></i><span class="hide-menu">Members</span></a></li>
-	<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="https://restorecord.com/dashboard/server/blacklist/" aria-expanded="false"><i data-feather="user-x"></i><span class="hide-menu">Blacklist</span></a></li>
+	<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="../../server/settings/" aria-expanded="false"><i data-feather="settings"></i><span class="hide-menu">Settings</span></a></li> 
+	<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="../../server/members/" aria-expanded="false"><i data-feather="users"></i><span class="hide-menu">Members</span></a></li>
+	<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="../../server/blacklist/" aria-expanded="false"><i data-feather="user-x"></i><span class="hide-menu">Blacklist</span></a></li>
 	<li class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i> <span class="hide-menu">Account</span></li>
-	<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="https://restorecord.com/dashboard/account/settings/" aria-expanded="false"><i data-feather="settings"></i><span class="hide-menu">Settings</span></a></li>
-	<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="https://restorecord.com/dashboard/account/upgrade/" aria-expanded="false"><i data-feather="activity"></i><span class="hide-menu">Upgrade</span></a></li>
+	<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="../../account/settings/" aria-expanded="false"><i data-feather="settings"></i><span class="hide-menu">Settings</span></a></li>
+	<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="../../account/upgrade/" aria-expanded="false"><i data-feather="activity"></i><span class="hide-menu">Upgrade</span></a></li>
 	<?php
 	if($admin)
 	{
 	?>
 	<li class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i> <span class="hide-menu">Admin</span></li>
-	<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="https://restorecord.com/admin/" aria-expanded="false"><i data-feather="move"></i><span class="hide-menu">Panel</span></a></li>
+	<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="../admin/" aria-expanded="false"><i data-feather="move"></i><span class="hide-menu">Panel</span></a></li>
 	<?php
 	}
 }
@@ -164,7 +164,7 @@ function error($msg)
                             const notyf = new Notyf();
                             notyf
                               .error({
-                                message: \'' . $msg . '\',
+                                message: \'' . addslashes($msg) . '\',
                                 duration: 3500,
                                 dismissible: true
                               });               
@@ -179,7 +179,7 @@ function success($msg)
                             const notyf = new Notyf();
                             notyf
                               .success({
-                                message: \'' . $msg . '\',
+                                message: \'' . addslashes($msg) . '\',
                                 duration: 3500,
                                 dismissible: true
                               });               
@@ -201,7 +201,7 @@ function premium_check($username)
 	}
 }
 
-function apiRequest($url, $post=FALSE, $headers=array()) {
+function apiRequest($url, $post = FALSE, $headers=array()) {
   
   $ch = curl_init($url);
   curl_setopt($ch, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4);

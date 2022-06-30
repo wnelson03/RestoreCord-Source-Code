@@ -7,32 +7,32 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 if (!isset($_SESSION['username'])) {
-         header("Location: ../../../login/");
-        exit();
+    header("Location: ../../../login/");
+    exit();
 }
-	        $username = $_SESSION['username'];
-			
-			premium_check($username);
-			
-            ($result = mysqli_query($link, "SELECT * FROM `users` WHERE `username` = '$username'")) or die(mysqli_error($link));
-            $row = mysqli_fetch_array($result);
-            
-            $banned = $row['banned'];
-			if (!is_null($banned))
-			{
-				echo "<meta http-equiv='Refresh' Content='0; url=../../../login/'>";
-				session_destroy();
-				exit();
-			}
-        
-            $role = $row['role'];
-            $_SESSION['role'] = $role;
-			
-			$darkmode = $row['darkmode'];                         
-			$isadmin = $row['admin'];                         
+$username = $_SESSION['username'];
+
+premium_check($username);
+
+($result = mysqli_query($link, "SELECT * FROM `users` WHERE `username` = '$username'")) or die(mysqli_error($link));
+$row = mysqli_fetch_array($result);
+
+$banned = $row['banned'];
+if (!is_null($banned)) {
+    echo "<meta http-equiv='Refresh' Content='0; url=../../../login/'>";
+    session_destroy();
+    exit();
+}
+
+$role = $row['role'];
+$_SESSION['role'] = $role;
+
+$darkmode = $row['darkmode'];
+$isadmin = $row['admin'];
 ?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -42,22 +42,23 @@ if (!isset($_SESSION['username'])) {
     <meta name="description" content="Xtreme is powerful and clean admin dashboard template, inpired from Google's Material Design">
     <meta name="robots" content="noindex,nofollow">
     <title>RestoreCord - Upgrade</title>
-	<script src="https://shoppy.gg/api/embed.js"></script>
+    <script src="https://shoppy.gg/api/embed.js"></script>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="300x250" href="https://i.imgur.com/Nfy4OoG.png">
-	<script src="https://cdn.keyauth.uk/dashboard/assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.keyauth.uk/dashboard/assets/libs/jquery/dist/jquery.min.js"></script>
     <!-- Custom CSS -->
-	<link href="https://cdn.keyauth.uk/dashboard/assets/extra-libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
+    <link href="https://cdn.keyauth.uk/dashboard/assets/extra-libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
     <link href="https://cdn.keyauth.uk/dashboard/assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
     <link href="https://cdn.keyauth.uk/dashboard/assets/extra-libs/c3/c3.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="https://cdn.keyauth.uk/dashboard/dist/css/style.min.css" rel="stylesheet">
 
-	<script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
 
 
 
-	                    
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -65,7 +66,12 @@ if (!isset($_SESSION['username'])) {
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body data-theme="<?php if($darkmode == 0){echo "dark";}else{echo"light";}?>">
+
+<body data-theme="<?php if ($darkmode == 0) {
+                        echo "dark";
+                    } else {
+                        echo "light";
+                    } ?>">
     <!-- ============================================================== -->
     <!-- Preloader - style you can find in spinners.css -->
     <!-- ============================================================== -->
@@ -117,13 +123,13 @@ if (!isset($_SESSION['username'])) {
                         <!-- create new -->
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle waves-effect waves-dark" href="https://restorecord.com/discord/" target="discord"> <i class="mdi mdi-discord font-24"></i>
-						</a>
-						</li>
-						<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle waves-effect waves-dark" href="https://restorecord.com/telegram/" target="telegram"> <i class="mdi mdi-telegram font-24"></i>
-						</a>
-						</li>
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="../../../discord/" target="discord"> <i class="mdi mdi-discord font-24"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="../../../discord/" target="telegram"> <i class="mdi mdi-telegram font-24"></i>
+                            </a>
+                        </li>
                         <!-- ============================================================== -->
                         <!-- User profile and search -->
                         <!-- ============================================================== -->
@@ -161,7 +167,7 @@ if (!isset($_SESSION['username'])) {
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
-					<?php sidebar($isadmin); ?>
+                        <?php sidebar($isadmin); ?>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -190,11 +196,11 @@ if (!isset($_SESSION['username'])) {
             <!-- ============================================================== -->
             <!-- ============================================================== -->
             <!-- Container fluid  -->
-			
-		
-			
-			
-   
+
+
+
+
+
             <!-- ============================================================== -->
             <div class="container-fluid" id="content">
                 <!-- ============================================================== -->
@@ -202,51 +208,48 @@ if (!isset($_SESSION['username'])) {
                 <!-- ============================================================== -->
                 <!-- File export -->
                 <div class="row">
-				<div class="col-md-4 col-sm-12">
-				<div class="card" style="zoom: 1;">
-				<div class="card-body">
-				<div class="form-group">
-				<h4 class="card-title">Free</h4>
-				<p>25 Members</p>
-				<p>1 Server</p>
-				<p>No IP Ban</p>
-				<p>No VPN Check</p>
-				<p>Limited Support</p>
-				<p>No Verificiation Logs</p>
-				<button class="btn btn-lg btn-block font-medium btn-outline-success block-card">Already Have</button>
-				</div>
-				</div>
-				</div>
-				</div>
-				<div class="col-md-4 col-sm-12">
-				<div class="card">
-				<div class="card-body">
-				<div class="form-group">
-				<h4 class="card-title">Premium</h4>
-				<p>Unlimited Members</p>
-				<p>Unlimited Servers</p>
-				<p>IP Ban</p>
-				<p>VPN Check</p>
-				<p>24.7.365 Support</p>
-				<p>Verificiation Logs</p>
-				<?php
-                              $role = $_SESSION['role'];
-                              if($role == "premium")
-                              {
-                              echo'<button class="btn btn-lg btn-block font-medium btn-outline-warning block-sidenav">Already Have</button>';   
-                              }
-                              else
-                              {
-                              echo'<a data-shoppy-product="8hCOmd6" data-shoppy-username="'.$_SESSION['username'].'" class="btn btn-lg btn-block font-medium btn-outline-warning block-sidenav">Purchase</a>';
-                              }
-                              
-                              ?>
-				</div>
-				</div>
-				</div>
-				</div>
-				</div>
-				</div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="card" style="zoom: 1;">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <h4 class="card-title">Free</h4>
+                                    <p>25 Members</p>
+                                    <p>1 Server</p>
+                                    <p>No IP Ban</p>
+                                    <p>No VPN Check</p>
+                                    <p>Limited Support</p>
+                                    <p>No Verificiation Logs</p>
+                                    <button class="btn btn-lg btn-block font-medium btn-outline-success block-card">Already Have</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <h4 class="card-title">Premium</h4>
+                                    <p>Unlimited Members</p>
+                                    <p>Unlimited Servers</p>
+                                    <p>IP Ban</p>
+                                    <p>VPN Check</p>
+                                    <p>24.7.365 Support</p>
+                                    <p>Verificiation Logs</p>
+                                    <?php
+                                    $role = $_SESSION['role'];
+                                    if ($role == "premium") {
+                                        echo '<button class="btn btn-lg btn-block font-medium btn-outline-warning block-sidenav">Already Have</button>';
+                                    } else {
+                                        echo '<a data-shoppy-product="8hCOmd6" data-shoppy-username="' . $_SESSION['username'] . '" class="btn btn-lg btn-block font-medium btn-outline-warning block-sidenav">Purchase</a>';
+                                    }
+
+                                    ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
             <!-- ============================================================== -->
@@ -254,8 +257,10 @@ if (!isset($_SESSION['username'])) {
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer text-center">
-       Copyright &copy; <script>document.write(new Date().getFullYear())</script> RestoreCord
-</footer>
+                Copyright &copy; <script>
+                    document.write(new Date().getFullYear())
+                </script> RestoreCord
+            </footer>
             <!-- ============================================================== -->
             <!-- End footer -->
             <!-- ============================================================== -->
@@ -268,12 +273,12 @@ if (!isset($_SESSION['username'])) {
     <!-- End Wrapper -->
     <!-- ============================================================== -->
     <!-- ============================================================== -->
-    
-   
+
+
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
-    
+
     <!-- Bootstrap tether Core JavaScript -->
     <script src="https://cdn.keyauth.uk/dashboard/assets/libs/popper-js/dist/umd/popper.min.js"></script>
     <script src="https://cdn.keyauth.uk/dashboard/assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -289,7 +294,7 @@ if (!isset($_SESSION['username'])) {
     <!--Menu sidebar -->
     <script src="https://cdn.keyauth.uk/dashboard/dist/js/sidebarmenu.js"></script>
     <!--Custom JavaScript -->
-   <script src="https://cdn.keyauth.uk/dashboard/dist/js/feather.min.js"></script>
+    <script src="https://cdn.keyauth.uk/dashboard/dist/js/feather.min.js"></script>
     <script src="https://cdn.keyauth.uk/dashboard/dist/js/custom.min.js"></script>
     <!--This page JavaScript -->
     <!--chartis chart-->
@@ -301,8 +306,8 @@ if (!isset($_SESSION['username'])) {
     <!--chartjs -->
     <script src="https://cdn.keyauth.uk/dashboard/assets/libs/chart-js/dist/chart.min.js"></script>
     <script src="https://cdn.keyauth.uk/dashboard/dist/js/pages/dashboards/dashboard1.js"></script>
-		<script src="https://cdn.keyauth.uk/dashboard/assets/extra-libs/datatables.net/js/jquery.dataTables.min.js"></script>
-	    <!-- start - This is for export functionality only -->
+    <script src="https://cdn.keyauth.uk/dashboard/assets/extra-libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <!-- start - This is for export functionality only -->
     <script src="https://cdn.datatables.net/buttons/1.5.1/js/dataTables.buttons.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.flash.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
@@ -310,6 +315,7 @@ if (!isset($_SESSION['username'])) {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/vfs_fonts.js"></script>
     <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.html5.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.print.min.js"></script>
-<script src="https://cdn.keyauth.uk/dashboard/dist/js/pages/datatable/datatable-advanced.init.js"></script>
+    <script src="https://cdn.keyauth.uk/dashboard/dist/js/pages/datatable/datatable-advanced.init.js"></script>
 </body>
+
 </html>
