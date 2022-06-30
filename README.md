@@ -56,9 +56,9 @@ Please setup your MySQL database now and import the structure from here https://
 
 Now for c# part
 
-- Change `https://restorecord.com/auth/` to `https://example.com/verify/` and use your website's domain instead of `example.com` https://github.com/wnelson03/RestoreCord-Source-Code/blob/32f174b2db848c470f1f05b6aff9b7b1f3a28747/bot%20source/RestoreCord/Commands/Pull.cs#L113
-- **(important, you don't want Discord to think you're a bot RestoreCord owns and ban you)** Change `RestoreCord (public release, 1.0.0.0)` to the name of your site or something https://github.com/wnelson03/RestoreCord-Source-Code/blob/32f174b2db848c470f1f05b6aff9b7b1f3a28747/bot%20source/RestoreCord/Miscellaneous/Utilities.cs#L38
-- Replace `rest_admin` with database username, replace `rest_main` with database password https://github.com/wnelson03/RestoreCord-Source-Code/blob/32f174b2db848c470f1f05b6aff9b7b1f3a28747/bot%20source/RestoreCord/Services/Database.cs#L8
+- Change `https://restorecord.com/auth/` to `https://example.com/verify/` and use your website's domain instead of `example.com` https://github.com/wnelson03/RestoreCord-Source-Code/blob/main/bot%20source/RestoreCord/Commands/Pull.cs#L113
+- **(important, you don't want Discord to think you're a bot RestoreCord owns and ban you)** Change `RestoreCord (public release, 1.0.0.0)` to the name of your site or something https://github.com/wnelson03/RestoreCord-Source-Code/blob/main/bot%20source/RestoreCord/Miscellaneous/Utilities.cs#L38
+- Replace `rest_admin` with database username, replace `rest_main` with database password https://github.com/wnelson03/RestoreCord-Source-Code/blob/main/bot%20source/RestoreCord/Services/Database.cs#L8
 - Replace `databasePasswordHere` with database password https://github.com/wnelson03/RestoreCord-Source-Code/blob/main/bot%20source/RestoreCord/Properties/Resources.resx#L127
 - Replace `clientSecretHere` your Discord bot's client secret https://github.com/wnelson03/RestoreCord-Source-Code/blob/main/bot%20source/RestoreCord/Properties/Resources.resx#L124
 - Replace `discordIdHere` with your Discord bot's application ID https://github.com/wnelson03/RestoreCord-Source-Code/blob/main/bot%20source/RestoreCord/Properties/Resources.resx#L121
