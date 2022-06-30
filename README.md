@@ -99,7 +99,7 @@ Once you set this up, the bot should come online and slash commands should work,
 Here's a YouTube video showing how to use the bot https://www.youtube.com/watch?v=dVWPEdJY0zA
 
 
-How to give yourself lifetime premium:
+How to give yourself lifetime premium (replace `yourUsernameHere` with your username):
 ```sql
 UPDATE `users` SET `role` = 'premium',`expiry` = 2224663363 WHERE `username` = 'yourUsernameHere'
 ```
