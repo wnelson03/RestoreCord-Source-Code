@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestoreCord", "RestoreCord\RestoreCord.csproj", "{91A06BC3-E7BA-43ED-A4EA-20EDCB21AA59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91A06BC3-E7BA-43ED-A4EA-20EDCB21AA59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91A06BC3-E7BA-43ED-A4EA-20EDCB21AA59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91A06BC3-E7BA-43ED-A4EA-20EDCB21AA59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91A06BC3-E7BA-43ED-A4EA-20EDCB21AA59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97B32BE6-FDD6-4872-BD70-643239E35B16}
+	EndGlobalSection
+EndGlobal

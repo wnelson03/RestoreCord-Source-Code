@@ -1,0 +1,36 @@
+body{
+	background-color: rgb(36, 41, 46) !important;
+}
+
+h1, h2, h3, h4, h5, h6{
+	color: #fff;
+}
+
+p, span, small{
+	color: #eaeaea;
+}
+
+#box{
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 100px;
+	border: 2px solid rgb(24, 26, 31);
+	border-radius: 5px;
+	text-align: center;
+	padding: 20px;
+	background-color: rgb(49, 54, 63) !important;
+}
+
+#server_pic{
+	display: block;
+	border-radius: 50%;
+	margin: 10px auto;
+	width: 200px;
+	border: 2px solid rgb(24, 26, 31);
+
+}
+
+hr{
+	margin: 20px;
+	background-color: #eaeaea;
+}
