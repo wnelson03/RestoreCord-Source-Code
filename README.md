@@ -17,7 +17,9 @@ The license allows you to use this source code and sell it, meaning you can crea
 
 ## Reasoning:
 
-*RestoreCord, the John Deere of restore bots (John Deere doesn't allow anyone to work on the tractor they paid thousands for. They make the firmware super hard to reverse, you must know computer hacking to work on your own tractor). RestoreCord is evidently scared of competiton and therefore tries to monopolize the restore bot market. they know they can't innovate so they attack others. Their developer has been caught DDoSing Letoa, proof: https://www.youtube.com/watch?v=HOnlI5FoWJ8 The developer was fine when I shared source with xenos, though when I open-sourced the code I paid for, he launched a lengthy DDoS attack to Letoa which has been going on and off for hours now. I signed no contract with him, I agreed to no ToS saying I couldn't share the code. He's just ignorant and thinks I'm going to cave into his harassment he tries on everyone else.*
+*RestoreCord, the John Deere of restore bots (John Deere doesn't allow anyone to work on the tractor they paid thousands for. They make the firmware super hard to reverse, you must know computer hacking to work on your own tractor). 
+
+RestoreCord is evidently scared of competiton and therefore tries to monopolize the restore bot market. they know they can't innovate so they attack others. Their developer has been caught DDoSing Letoa, proof: https://www.youtube.com/watch?v=HOnlI5FoWJ8 The developer was fine when I shared source with xenos, though when I open-sourced the code I paid for, he launched a lengthy DDoS attack to Letoa which has been going on and off for hours now. I signed no contract with him, I agreed to no ToS saying I couldn't share the code. He's just ignorant and thinks I'm going to cave into his harassment he tries on everyone else.*
 
 Since January 2022 I've no longer been selling member restore bots. I founded RestoreCord in 2020 and sold it then. Unfortunately, I sold it to an individual who goes by the monikers "xenos" or "ytmcgamer". It was later revealed this individual has token logged people. Video of him admitting it: https://www.youtube.com/watch?v=8dVNMcUR00A
 
