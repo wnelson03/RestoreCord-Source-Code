@@ -19,6 +19,10 @@ The license allows you to use this source code and sell it, meaning you can crea
 
 He claimed he did it 2 years ago, though there was an incident where he Mass DM spammed the Discord server of a competitor restore bot service named Guild Restore. The developer for Guild Restore, Gannicus, showed a screenshot from a user where the user said his account was hacked.
 
+He also just scammed me for $10 server boosts. They were suppsosed to be until August and he scammed me because I released this source, despite having full rights to and not ever promising him I wouldn't release it, proof: https://www.youtube.com/watch?v=VrGNffMNX0k
+
+He also commited credit card fraud against Letoa. imagine being so broke you must fraudulently spend $7, proof: https://imgur.com/a/EQpSIEo
+
 RestoreCord was banned late April 2022 due to messages in their server from users which explained how they evaded Discord ToS with RestoreCord. I notified xenos of these messages and suggested that he delete them. He didn't take action on the messages and all RestoreCord assets were later banned. RestoreCord now intends to come back with "custom bots", where each server has its own bot. Given that Discord has clearly expressed they don't want RestoreCord on their platform by banning multiple accounts and servers, it is illegal for Discord to bypass this technological ban. So we could see RestoreCord facing legal action, and depending on where the person behind the moniker "xenos" lives, we could see that person facing criminal charges if that jurisdiction makes it illegal. It is criminally illegal in the United States to do what RestoreCord plans to do with the custom bots, after being banned by Discord multiple times.
 
 So, for all these reasons I suggest you stay the hell away from RestoreCord. they're very shady and I am very sorry to have sold to such a dissolute individual. I recommend you check out https://letoa.me, they have automatic server backups and are as cheap as RestoreCord - $10/year
