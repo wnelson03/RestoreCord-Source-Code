@@ -74,27 +74,40 @@ Now for c# part
 - Replace `discordIdHere` with your Discord bot's application ID https://github.com/wnelson03/RestoreCord-Source-Code/blob/eef52c3e87ff59b0b928f58cf8332dfde4060543/bot%20source/RestoreCord/Properties/Resources.resx#L121
 - Replace `botTokenHere` with your Discord bot's token https://github.com/wnelson03/RestoreCord-Source-Code/blob/eef52c3e87ff59b0b928f58cf8332dfde4060543/bot%20source/RestoreCord/Properties/Resources.resx#L139
 
-The developer I paid then compiles it to a linux appimage somehow
-
-Then the developer said run these commands
+Note that this is written for Debian 11. For any other distro this is self explanatory. If you can't figure this out then leave.
 
 ```bash
-dpkg -i packages-microsoft-prod.deb
+wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
-apt-get update && apt-get upgrade -y
-apt-get install dotnet-runtime-5.0 -y
 ```
 
-Then he said make a process like this and enable it and start it with systemctl
+```bash
+sudo apt-get update; \
+  sudo apt-get install -y apt-transport-https && \
+  sudo apt-get update && \
+  sudo apt-get install -y dotnet-sdk-5.0 dotnet-runtime-5.0
+```
+
+For this next part make sure you are in the bot's root directory.
+
+```bash
+dotnet restore
+dotnet build
+```
+
+You now have an executable!
+
+Create a service using systemctl, make sure to replace the paths.
 
 ```
 [Unit]
-Description=Nebula Mods Inc. API Bot
+Description=Nebula Mods Inc. Restorecord
 After=multi-user.target
 [Service]
-WorkingDirectory=/var/nebula-mods-inc/bots/discord/api
-ExecStart=/var/nebula-mods-inc/bots/discord/api/Network-Bot
-SyslogIdentifier=API-Bot
+WorkingDirectory=/path/to/working/directory
+ExecStart=/path/to/bot/executable 
+SyslogIdentifier=Restorecord
 Type=idle
 Restart=always
 RestartSec=15
@@ -102,7 +115,6 @@ RestartPreventExitStatus=0
 [Install]
 WantedBy=multi-user.target
 ```
-I'm not too sure so I'm not being super descriptive maybe. Though I'm sure you can figure out and get it running. Make sure you run it on the same server as the PHP and the MySQL database as that's far quicker.
 
 Once you set this up, the bot should come online and slash commands should work, do `/` and you'll see slash commands
 
