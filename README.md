@@ -21,11 +21,13 @@ The license allows you to use this source code and sell it, meaning you can crea
 
 *RestoreCord is evidently scared of competiton and therefore tries to monopolize the restore bot market. they know they can't innovate so they attack others. Their developer has been caught DDoSing Letoa, proof: https://www.youtube.com/watch?v=HOnlI5FoWJ8 The developer was fine when I shared source with xenos, though when I open-sourced the code I paid for, he launched a lengthy DDoS attack to Letoa which has been going on and off for hours now. I signed no contract with him, I agreed to no ToS saying I couldn't share the code. He's just ignorant and thinks I'm going to cave into his harassment he tries on everyone else.*
 
+Also, the RestoreCord developer keeps bitching me making public a source code I paid for wherein he never made me agree to a ToS or anything saying I couldn't distribute the source I bought among others. However, when I gave him access to my VPS for him to setup his source, he without my permission stole all my website files and made a private GitHub repository for them. And then a few days ago when I created this GitHub repository, he made that private GitHub repository public, leaking several of my credentials. 10/10 ethical developer would highly recommend 🤡, proof: https://linktr.ee/nebula.ethics
+
 Since January 2022 I've no longer been selling member restore bots. I founded RestoreCord in 2020 and sold it then. Unfortunately, I sold it to an individual who goes by the monikers "xenos" or "ytmcgamer". It was later revealed this individual has token logged people. Video of him admitting it: https://www.youtube.com/watch?v=8dVNMcUR00A
 
 He claimed he did it 2 years ago, though there was an incident where he Mass DM spammed the Discord server of a competitor restore bot service named Guild Restore. The developer for Guild Restore, Gannicus, showed a screenshot from a user where the user said his account was hacked.
 
-He also just scammed me for $10 server boosts. They were suppsosed to be until August and he scammed me because I released this source, despite having full rights to and not ever promising him I wouldn't release it, proof: https://www.youtube.com/watch?v=VrGNffMNX0k
+He also just scammed me for $10 server boosts. They were suppsosed to be until August and he scammed me because I released this source, despite having full rights to and not ever promising him I wouldn't release it, proof: https://www.youtube.com/watch?v=VrGNffMNX0k. He denies ever being paid for the boosts however I made a scam report and provided evidence of me paying him plus him inviting the boost bots, and he was banned https://cracked.io/Thread-Scammed-for-10-by-RestoreCord-owner-xenos1337
 
 He also commited credit card fraud against Letoa. imagine being so broke you must fraudulently spend $7, proof: https://imgur.com/a/EQpSIEo
 
