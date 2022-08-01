@@ -13,7 +13,16 @@ if (session_status() === PHP_SESSION_NONE) {
 
 // When Discord redirects the user back here, there will be a "code" and "state" parameter in the query string
 if(get('code') && strlen(get('code')) == 30) {
-
+  
+  // used by in-app authorization
+  if(get('state')) {
+	$result = mysqli_query($link, "SELECT * FROM `servers` WHERE `guildid` = '".get('state')."'");
+	while ($row = mysqli_fetch_array($result)) {
+		$_SESSION['owner'] = $row['owner'];
+		$_SESSION['name'] = $row['name'];
+	}
+  }
+  
   // Exchange the auth code for a token
   $token = apiRequest("https://discord.com/api/oauth2/token", array(
     "grant_type" => "authorization_code",

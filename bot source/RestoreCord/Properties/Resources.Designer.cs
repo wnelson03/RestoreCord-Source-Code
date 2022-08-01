@@ -19,7 +19,7 @@ namespace RestoreCord.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -61,7 +61,7 @@ namespace RestoreCord.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 791106018175614988.
+        ///   Looks up a localized string similar to .
         /// </summary>
         internal static string ClientID {
             get {
@@ -70,7 +70,7 @@ namespace RestoreCord.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to zQV10oh4g_eFsQ9AfVrxE9BuWmLdCUig.
+        ///   Looks up a localized string similar to .
         /// </summary>
         internal static string ClientSecret {
             get {
@@ -79,7 +79,7 @@ namespace RestoreCord.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to oNeFHuxBMt6h6z.
+        ///   Looks up a localized string similar to .
         /// </summary>
         internal static string MySQLPass {
             get {
@@ -106,7 +106,7 @@ namespace RestoreCord.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ODg5MzMwNDAzNTAzMTIwNDM0.YUfrew.JNzxqg19JlOddsYeOxR0xQ4qmZI.
+        ///   Looks up a localized string similar to ignore.
         /// </summary>
         internal static string TestToken {
             get {
@@ -115,7 +115,7 @@ namespace RestoreCord.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to NzkxMTA2MDE4MTc1NjE0OTg4.X-KU5A.FMGrIUyPj89qN8FgdKxlymgA2aI.
+        ///   Looks up a localized string similar to .
         /// </summary>
         internal static string Token {
             get {

@@ -35,7 +35,7 @@ namespace RestoreCord.Miscellaneous
                 var web = new WebClient();
                 web.Headers.Add("Authorization", $"Bot {Properties.Resources.Token}");
                 web.Headers.Add("X-RateLimit-Precision", "millisecond");
-                web.Headers.Add("User-Agent", "RestoreCord (public release, 1.0.0.0)");
+                web.Headers.Add("User-Agent", "tutorial-restore-system");
                 web.Headers.Add("Content-Type", $"application/json");
                 string data = null;
                 if (server.roleid is null)

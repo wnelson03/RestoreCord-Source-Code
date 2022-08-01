@@ -1,11 +1,8 @@
-# RestoreCord-Source-Code
-<a href="https://discord.gg/letoa">
-        <img src="https://img.shields.io/discord/983253635871952927?logo=discord"
-            alt="Letoa Backups Discord"></a>
-<a href="https://letoa.me">
-        <img src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white"
-            alt="Letoa Backups Website"></a>
+# RestoreCord Source Code
 
+The GitHub repository and the YouTube video are finally back up after xenos' fraudulent DMCA and blackmail towards me (proof: https://imgur.com/a/HEopxtG) 🎉
+
+### Tutorial video how to host for 100% free forever: https://www.youtube.com/watch?v=804Fzc5j4vo
 
 Source code for the member backup bot RestoreCord, found at restorecord.com
 
@@ -15,15 +12,17 @@ Source code for the member backup bot RestoreCord, found at restorecord.com
 
 The license allows you to use this source code and sell it, meaning you can create a competitor to RestoreCord if you wanted to. The only requirement is that you open-source your version of the code. If you do not do that, your website will be taken down for copyright infringement. Pretty simple license, I feel it's more than fair that you contribute back to the community given that I've contributed back the community.
 
+ Do note, however, that **absolutely nobody** aside from myself has legal rights to use my logo for RestoreCord, or repost videos I've recorded for RestoreCord. If you do not follow this, you will recieve a copyright takedown. 
+
 ## Reasoning:
 
 *RestoreCord, the John Deere of restore bots (John Deere doesn't allow anyone to work on the tractor they paid thousands for. They make the firmware super hard to reverse, you must know computer hacking to work on your own tractor).*
 
 *RestoreCord is evidently scared of competiton and therefore tries to monopolize the restore bot market. they know they can't innovate so they attack others. Their developer has been caught DDoSing Letoa, proof: https://www.youtube.com/watch?v=HOnlI5FoWJ8 The developer was fine when I shared source with xenos, though when I open-sourced the code I paid for, he launched a lengthy DDoS attack to Letoa which has been going on and off for hours now. I signed no contract with him, I agreed to no ToS saying I couldn't share the code. He's just ignorant and thinks I'm going to cave into his harassment he tries on everyone else.*
 
-Also, the RestoreCord developer keeps bitching me making public a source code I paid for wherein he never made me agree to a ToS or anything saying I couldn't distribute the source I bought among others. However, when I gave him access to my VPS for him to setup his source, he without my permission stole all my website files (he never worked on my website or was asked to - he has no business doing so and did this far before he was mad at me) and made a private GitHub repository for them. And then a few days ago when I created this GitHub repository, he made that private GitHub repository public, leaking several of my credentials. 10/10 ethical developer would highly recommend 🤡, proof: https://linktr.ee/nebula.ethics (if you don't see the leaked credential right away, scroll down on the page and the line is highlighted in yellow)
+Also, the RestoreCord developer keeps bitching me making public a source code I paid for wherein he never made me agree to a ToS or anything saying I couldn't distribute the source I bought among others. However, when I gave him access to my VPS for him to setup his source, he without my permission stole all my website files (he never worked on my website or was asked to - he has no business doing so and did this far before he was mad at me) and made a private GitHub repository for them. And then a few days ago when I created this GitHub repository, he made that private GitHub repository public, leaking several of my credentials. 10/10 ethical developer would highly recommend 🤡, proof: https://allmylinks.com/nebula-ethics (if you don't see the leaked credential right away, scroll down on the page and the line is highlighted in yellow)
 
-Since January 2022 I've no longer been selling member restore bots. I founded RestoreCord in 2020 and sold it then. Unfortunately, I sold it to an individual who goes by the monikers "xenos" or "ytmcgamer". It was later revealed this individual has token logged people. Video of him admitting it: https://www.youtube.com/watch?v=8dVNMcUR00A
+Since January 2022 I've no longer been selling member restore bots. I founded RestoreCord in 2020 and sold it then. Unfortunately, I sold it to an individual who goes by the monikers "xenos" or "ytmcgamer". It was later revealed this individual has token logged people. Video of him admitting it: https://www.youtube.com/watch?v=8dVNMcUR00A. Additionally, here's evidence of him selling Discord phishing software only a few months ago https://www.youtube.com/watch?v=idho403wdLg
 
 He claimed he did it 2 years ago, though there was an incident where he Mass DM spammed the Discord server of a competitor restore bot service named Guild Restore. The developer for Guild Restore, Gannicus, showed a screenshot from a user where the user said his account was hacked.
 

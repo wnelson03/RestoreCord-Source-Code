@@ -2,13 +2,13 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>RestoreCord</RootNamespace>
     <ApplicationIcon>restorelogo.ico</ApplicationIcon>
-    <Authors>Nebula</Authors>
-    <Company>Nebula Mods Inc.</Company>
+    <Authors>Nelson Cybersecurity LLC</Authors>
+    <Company>Nelson Cybersecurity LLC</Company>
     <Description>Restore Discord Server Members And Settings!</Description>
-    <Copyright>Nebula Mods Inc.</Copyright>
+    <Copyright>Nelson Cybersecurity LLC</Copyright>
     <PackageProjectUrl>https://restorecord.com</PackageProjectUrl>
     <AssemblyVersion>1.0.0.1</AssemblyVersion>
     <FileVersion>1.0.0.1</FileVersion>
