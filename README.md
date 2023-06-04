@@ -1,38 +1,20 @@
 # RestoreCord Source Code
 
-The GitHub repository and the YouTube video are finally back up after xenos' fraudulent DMCA and blackmail towards me (proof: https://imgur.com/a/HEopxtG) 🎉
-
 ### Tutorial video how to host for 100% free forever: https://www.youtube.com/watch?v=804Fzc5j4vo
 
-Source code for the member backup bot RestoreCord, found at restorecord.com
+Source code for the member backup bot RestoreCord, found at [restorecord.com](https://restorecord.com)
 
-**I am the legal owner of this source code. I paid a developer for this source code. While I gave the new owner of RestoreCord this code when I sold it to him, I did NOT relinquish copyrights to him. Any false DMCA will be counterstriked and I will pursue legal action if I'm able to find the copyright troll's address.**
+I founded RestoreCord sometime in April 2020, I forget the exact date. I then sold to [@xenos1337](https://github.com/xenos1337) in January 2022. RestoreCord was the first ever restore bot! Now there's more than a dozen 😆
 
-## License
+[@xenos1337](https://github.com/xenos1337) made some mistakes in June  2022 resulting in the bot getting banned from Discord. I then released this source code since [RestoreCord.com](https://restorecord.com) no longer uses it anymore due to them changing to a Node.js source code with a custom bot for each user, so a mass ban couldn't occur again.
 
-The license allows you to use this source code and sell it, meaning you can create a competitor to RestoreCord if you wanted to. The only requirement is that you open-source your version of the code. If you do not do that, your website will be taken down for copyright infringement. Pretty simple license, I feel it's more than fair that you contribute back to the community given that I've contributed back the community.
+This source is completely functional. It just doesn't have as many features as the latest RestoreCord, but it serves as a great example to anyone who's interested in these types of bots.
 
- Do note, however, that **absolutely nobody** aside from myself has legal rights to use my logo for RestoreCord, or repost videos I've recorded for RestoreCord. If you do not follow this, you will recieve a copyright takedown. 
+RestoreCord, the live website can be trusted fine now. They're not going to have another mass ban problem. I have inspected it closely and it follows all of my suggestions (rotating proxy, optional custom domain, etc) just follow the [RestoreCord Documentation](https://docs.restorecord.com/guides/secure-your-bot/) if you use the live site and you'll have no issues.
 
-## Reasoning:
+## Copyright License
 
-*RestoreCord, the John Deere of restore bots (John Deere doesn't allow anyone to work on the tractor they paid thousands for. They make the firmware super hard to reverse, you must know computer hacking to work on your own tractor).*
-
-*RestoreCord is evidently scared of competiton and therefore tries to monopolize the restore bot market. they know they can't innovate so they attack others. Their developer has been caught DDoSing Letoa, proof: https://www.youtube.com/watch?v=HOnlI5FoWJ8 The developer was fine when I shared source with xenos, though when I open-sourced the code I paid for, he launched a lengthy DDoS attack to Letoa which has been going on and off for hours now. I signed no contract with him, I agreed to no ToS saying I couldn't share the code. He's just ignorant and thinks I'm going to cave into his harassment he tries on everyone else.*
-
-Also, the RestoreCord developer keeps bitching me making public a source code I paid for wherein he never made me agree to a ToS or anything saying I couldn't distribute the source I bought among others. However, when I gave him access to my VPS for him to setup his source, he without my permission stole all my website files (he never worked on my website or was asked to - he has no business doing so and did this far before he was mad at me) and made a private GitHub repository for them. And then a few days ago when I created this GitHub repository, he made that private GitHub repository public, leaking several of my credentials. 10/10 ethical developer would highly recommend 🤡, proof: https://allmylinks.com/nebula-ethics (if you don't see the leaked credential right away, scroll down on the page and the line is highlighted in yellow)
-
-Since January 2022 I've no longer been selling member restore bots. I founded RestoreCord in 2020 and sold it then. Unfortunately, I sold it to an individual who goes by the monikers "xenos" or "ytmcgamer". It was later revealed this individual has token logged people. Video of him admitting it: https://www.youtube.com/watch?v=8dVNMcUR00A. Additionally, here's evidence of him selling Discord phishing software only a few months ago https://www.youtube.com/watch?v=idho403wdLg
-
-He claimed he did it 2 years ago, though there was an incident where he Mass DM spammed the Discord server of a competitor restore bot service named Guild Restore. The developer for Guild Restore, Gannicus, showed a screenshot from a user where the user said his account was hacked.
-
-He also just scammed me for $10 server boosts. They were suppsosed to be until August and he scammed me because I released this source, despite having full rights to and not ever promising him I wouldn't release it, proof: https://www.youtube.com/watch?v=VrGNffMNX0k. He denies ever being paid for the boosts however I made a scam report and provided evidence of me paying him plus him inviting the boost bots, and he was banned https://cracked.io/Thread-Scammed-for-10-by-RestoreCord-owner-xenos1337
-
-He also commited credit card fraud against Letoa. imagine being so broke you must fraudulently spend $7, proof: https://imgur.com/a/EQpSIEo
-
-RestoreCord was banned late April 2022 due to messages in their server from users which explained how they evaded Discord ToS with RestoreCord. I notified xenos of these messages and suggested that he delete them. He didn't take action on the messages and all RestoreCord assets were later banned. RestoreCord now intends to come back with "custom bots", where each server has its own bot. Given that Discord has clearly expressed they don't want RestoreCord on their platform by banning multiple accounts and servers, it is illegal for Discord to bypass this technological ban. So we could see RestoreCord facing legal action, and depending on where the person behind the moniker "xenos" lives, we could see that person facing criminal charges if that jurisdiction makes it illegal. It is criminally illegal in the United States to do what RestoreCord plans to do with the custom bots, after being banned by Discord multiple times.
-
-So, for all these reasons I suggest you stay the hell away from RestoreCord. they're very shady and I am very sorry to have sold to such a dissolute individual. I recommend you check out https://letoa.me, they have automatic server backups and are as cheap as RestoreCord - $10/year
+The code can be used for **commercial use** if you would like. The requirements are that you must **open-source the code** and **link to this repository** in order to not be in violation of the **GNU General Public License v2.0**
 
 ## Features
 
@@ -126,11 +108,6 @@ Here's a YouTube video showing how to use the bot https://www.youtube.com/watch?
 ```sql
 UPDATE `users` SET `role` = 'premium',`expiry` = 2224663363 WHERE `username` = 'yourUsernameHere'
 ```
-
-
-## Security issues/bugs
-
-Don't care, not fixing. This is not my issue anymore, I'm simply releasing for whoever wants it.
 
 ## Old source
 
