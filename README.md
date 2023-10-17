@@ -1,16 +1,33 @@
 # RestoreCord Source Code
 
+> [!NOTE]  
+> **TLDR:**
+> <br>New RestoreCord owner xenos1337 can't really be trusted, with [large YouTubers even exposing](https://www.youtube.com/watch?v=WZNWAoLJmyk&t=240s) the scam.
+> <br>I would recommend either using this source code, or use my new service [VaultCord](https://vaultcord.com) which already has far more features and actively listens to customer feedback 👍
+
 ### Tutorial video how to host for 100% free forever: https://www.youtube.com/watch?v=804Fzc5j4vo
 
-Source code for the member backup bot RestoreCord, found at [restorecord.com](https://restorecord.com)
+I created RestoreCord in April 2020, a Discord service for the backup of server members, so server owners could pull them back into a server after a raid or other member loss scenario.
 
-I founded RestoreCord sometime in April 2020, I forget the exact date. I then sold to [@xenos1337](https://github.com/xenos1337) in January 2022. RestoreCord was the first ever restore bot! Now there's more than a dozen 😆
+Due to my busy schedule, I hastily sold RestoreCord to a new owner in January 2022. Lesson learned, this isn't how you sell a business. This new owner, 'xenos1337', took things in a new direction. Unfortunately he started catering to scammers and those who sell their members. Meaning, he promoted the sale of members to other random server owners which serves as an annoyance and probably a privacy violation as well. You can see an [official sanctioned member-selling marketplace by RestoreCord here](https://t.me/restorecordtrade).
 
-[@xenos1337](https://github.com/xenos1337) made some mistakes in June  2022 resulting in the bot getting banned from Discord. I then released this source code since [RestoreCord.com](https://restorecord.com) no longer uses it anymore due to them changing to a Node.js source code with a custom bot for each user, so a mass ban couldn't occur again.
+It also became apparent that xenos1337 was involved with [token logging](https://www.youtube.com/watch?v=8dVNMcUR00A) (stealing Discord accounts) and [Discord phishing pages](https://www.youtube.com/watch?v=idho403wdLg) (more Discord account stealing). Not exactly what you would want someone who has access to **millions** of Discord accounts via RestoreCord doing in his free time..
 
-This source is completely functional. It just doesn't have as many features as the latest RestoreCord, but it serves as a great example to anyone who's interested in these types of bots.
+Unsuprisingly, the company operating Discord didn't take kindly to this brazen activity and shut down the bot in June 2022. 1,000,000+ members were lost forever. No explanation or compensation was given by the RestoreCord management to their customers.
 
-RestoreCord, the live website can be trusted fine now. They're not going to have another mass ban problem. I have inspected it closely and it follows all of my suggestions (rotating proxy, optional custom domain, etc) just follow the [RestoreCord Documentation](https://docs.restorecord.com/guides/secure-your-bot/) if you use the live site and you'll have no issues.
+xenos1337 had shared his plans to develop a new codebase that would be compatiable with custom bots, one bot per customer. This meant no use for the original source code, which I developed and had retained copyright ownership over, since I never transferred the copyright ownership.
+
+I published the original source code, seen in this GitHub repository. I had the legal right and felt an ethical obligation to do so, as RestoreCord customers were left waiting for months with no explanation or clear ETA when the service would return.
+
+xenos1337 was not happy about this, first attemtping to [illegally remove this GitHub repository](https://imgur.com/a/HEopxtG). Then, he [pettily scammed me for $10](https://www.youtube.com/watch?v=VrGNffMNX0k) and [stole my Discord server vanity](https://cracked.io/Thread-Scammed-for-10-by-RestoreCord-owner-xenos1337)
+
+He continued to level attacks against me and anyone affiliated with me. He [successfully commited credit card fraud](https://imgur.com/a/EQpSIEo) on a competitor of RestoreCord that I was affiliating with. He conspired with a former co-worker of mine ([@NebulaMods](https://github.com/NebulaMods)/nebulamods.ca) to [DDoS that same RestoreCord competitor](https://www.youtube.com/watch?v=HOnlI5FoWJ8), and [leak private API credentials](https://allmylinks.com/nebula-ethics) that the co-worker stole from my server without consent.
+
+While he did finally stop the attacks, no compensation was ever made for these wrongful, unlawful attacks, nor were RestoreCord customers compensated either for their losses.
+
+The problems continue to this day. Just a few months ago in May 2023, the new owner lost 10,000+ members due to failing to backup his database automatically, which led to him reverting to a 3 month old backup after they were banned from the hosting company OVH for fraud & abuse.
+
+I don't think the new management of RestoreCord has proven to be professional or reliable. That is why I would recommend using the source code or using my new service [VaultCord](https://vaultcord.com) which has far more features and values customer feedback.
 
 ## Copyright License
 
@@ -19,12 +36,12 @@ The code can be used for **commercial use** if you would like. The requirements 
 ## Features
 
 - Multi server
-- Restore members (nothing else, this was one of the early versions of RestoreCord)
+- Restore members
 - IP logging
 - Discord webhook notifications
-- Handles rate limiting and access token expiry. Most bots don't and break when you try to pull members, not RestoreCord
-- VPN block
-- IP blacklisting
+- Handles rate limits and access token refreshing. Most bots don't and break when you try to pull members, not this.
+- VPN detection/block
+- IP blacklist
 
 ## How to setup
 
@@ -108,7 +125,3 @@ Here's a YouTube video showing how to use the bot https://www.youtube.com/watch?
 ```sql
 UPDATE `users` SET `role` = 'premium',`expiry` = 2224663363 WHERE `username` = 'yourUsernameHere'
 ```
-
-## Old source
-
-I paid a different developer for a bot source before the current c# one and it was a shitshow. I paid this developer who went by "Missy", "Steer", or "Vultrex Development". This is a node.js react source and it's shit. For example, when someone redeems a premium key it deletes that premium key, and all the other premium keys in the array. If you delete a user, it deletes that user and all the rest of the items in the array. This is easy to fix and I've done it before, though I deleted that source when I switched to this one. Maybe some of it will be of use to you, so I'm making it open too. Aside from those minor bugs, it works completely fine. It handles rate limiting and access token expiration. Download it here https://github.com/wnelson03/RestoreCord-Source-Code/blob/main/old_source.zip, no instructions for it, you must inspect yourself. I didn't save instructions and I'm not familiar with it, so that's up to you.
