@@ -33,6 +33,8 @@ I don't think the new management of RestoreCord has proven to be professional or
 
 The code can be used for **commercial use** if you would like. The requirements are that you must **open-source the code** and **link to this repository** in order to not be in violation of the **GNU General Public License v2.0**
 
+Do note, however, that absolutely nobody aside from myself (William Nelson) has legal rights to use my logo for RestoreCord, or repost videos I've recorded for RestoreCord. If you do not follow this, you will recieve a copyright takedown.
+
 ## Features
 
 - Multi server
