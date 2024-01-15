@@ -11,7 +11,7 @@ I created RestoreCord in April 2020, a Discord service for the backup of server 
 
 Due to my busy schedule, I hastily sold RestoreCord to a new owner in January 2022. Lesson learned, this isn't how you sell a business. This new owner, 'xenos1337', took things in a new direction. Unfortunately he started catering to scammers and those who sell their members. Meaning, he promoted the sale of members to other random server owners which serves as an annoyance and probably a privacy violation as well. You can see an [official sanctioned member-selling marketplace by RestoreCord here](https://t.me/restorecordtrade).
 
-It also became apparent that xenos1337 was involved with [token logging](https://www.youtube.com/watch?v=8dVNMcUR00A) (stealing Discord accounts) and [Discord phishing pages](https://www.youtube.com/watch?v=idho403wdLg) (more Discord account stealing). Not exactly what you would want someone who has access to **millions** of Discord accounts via RestoreCord doing in his free time..
+It also became apparent that xenos1337 was involved with [token logging](https://nelsoncybersecurity.com/xenos-token-logging.mp4) (stealing Discord accounts) and [Discord phishing pages](https://nelsoncybersecurity.com/xenos-phishing-scumbag.mp4) (more Discord account stealing). Not exactly what you would want someone who has access to **millions** of Discord accounts via RestoreCord doing in his free time..
 
 Unsuprisingly, the company operating Discord didn't take kindly to this brazen activity and shut down the bot in June 2022. 1,000,000+ members were lost forever. No explanation or compensation was given by the RestoreCord management to their customers.
 
@@ -19,9 +19,9 @@ xenos1337 had shared his plans to develop a new codebase that would be compatiab
 
 I published the original source code, seen in this GitHub repository. I had the legal right and felt an ethical obligation to do so, as RestoreCord customers were left waiting for months with no explanation or clear ETA when the service would return.
 
-xenos1337 was not happy about this, first attemtping to [illegally remove this GitHub repository](https://imgur.com/a/HEopxtG). Then, he [pettily scammed me for $10](https://www.youtube.com/watch?v=VrGNffMNX0k) and [stole my Discord server vanity](https://cracked.io/Thread-Scammed-for-10-by-RestoreCord-owner-xenos1337)
+xenos1337 was not happy about this, first attemtping to [illegally remove this GitHub repository](https://imgur.com/a/HEopxtG). Then, he [pettily scammed me for $10](https://nelsoncybersecurity.com/xenos-scamming-boosts.mp4) and [stole my Discord server vanity](https://cracked.io/Thread-Scammed-for-10-by-RestoreCord-owner-xenos1337)
 
-He continued to level attacks against me and anyone affiliated with me. He [successfully commited credit card fraud](https://imgur.com/a/EQpSIEo) on a competitor of RestoreCord that I was affiliating with. He conspired with a former co-worker of mine ([@NebulaMods](https://github.com/NebulaMods)/nebulamods.ca) to [DDoS that same RestoreCord competitor](https://www.youtube.com/watch?v=HOnlI5FoWJ8), and [leak private API credentials](https://allmylinks.com/nebula-ethics) that the co-worker stole from my server without consent.
+He continued to level attacks against me and anyone affiliated with me. He [successfully commited credit card fraud](https://imgur.com/a/EQpSIEo) on a competitor of RestoreCord that I was affiliating with. He conspired with a former co-worker of mine ([@NebulaMods](https://github.com/NebulaMods)/nebulamods.ca) to [DDoS that same RestoreCord competitor](https://nelsoncybersecurity.com/restorecord-ddos-blackmail.mp4), and [leak private API credentials](https://allmylinks.com/nebula-ethics) that the co-worker stole from my server without consent.
 
 While he did finally stop the attacks, no compensation was ever made for these wrongful, unlawful attacks, nor were RestoreCord customers compensated either for their losses.
 
@@ -120,7 +120,7 @@ WantedBy=multi-user.target
 
 Once you set this up, the bot should come online and slash commands should work, do `/` and you'll see slash commands
 
-Here's a YouTube video showing how to use the bot https://www.youtube.com/watch?v=dVWPEdJY0zA
+Here's a YouTube video showing how to use the bot https://nelsoncybersecurity.com/restorecord-tutorial.mp4
 
 
 **How to give yourself lifetime premium (replace `yourUsernameHere` with your username):**
