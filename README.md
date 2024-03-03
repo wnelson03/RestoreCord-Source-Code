@@ -1,5 +1,7 @@
 # RestoreCord Source Code
 
+Update, restorecord 2024 Next.js [source leaked](https://web.archive.org/web/20240302012553/https://docs.restorecord.com/introduction). They were [100% confirmed to be selling user data](https://archive.is/GWVc2) (search "Inf0sec") and the owner xenos1337 [himself added the backdoor](https://archive.is/OKgmf) (search "Inf0sec") to sell out on his own users.. Beyond pathetic 🤦‍♂️🤦‍♂️🤦‍♂️ 
+
 > [!NOTE]  
 > **TLDR:**
 > <br>New RestoreCord owner xenos1337 can't really be trusted, with [large YouTubers even exposing](https://www.youtube.com/watch?v=WZNWAoLJmyk&t=240s) the scam.
