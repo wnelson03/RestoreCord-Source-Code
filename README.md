@@ -1,10 +1,12 @@
 # RestoreCord Source Code
 
-Update, restorecord 2024 Next.js [source leaked](https://web.archive.org/web/20240302012553/https://docs.restorecord.com/introduction). They were [100% confirmed to be selling user data](https://archive.is/GWVc2) (search "Inf0sec") and the owner xenos1337 [himself added the backdoor](https://archive.is/OKgmf) (search "Inf0sec") to sell out on his own users.. Beyond pathetic 🤦‍♂️🤦‍♂️🤦‍♂️ 
+Update, restorecord 2024 Next.js [source leaked](https://web.archive.org/web/20240302012553/https://docs.restorecord.com/introduction). They were [100% confirmed to be selling user data](https://archive.is/GWVc2) (search "Inf0sec") and the owner xenos1337 [himself added the backdoor](https://archive.ph/dxKfB) (Ctrl + F "Inf0sec") to sell out on his own users.. Beyond pathetic 🤦‍♂️🤦‍♂️🤦‍♂️
+
+And unfortunately there's been a partial data breach too :/ this is ridiculous
 
 > [!NOTE]  
 > **TLDR:**
-> <br>New RestoreCord owner xenos1337 can't really be trusted, with [large YouTubers even exposing](https://www.youtube.com/watch?v=WZNWAoLJmyk&t=240s) the scam.
+> <br>New RestoreCord owner xenos1337 can't really be trusted, with [large YouTubers even exposing](https://www.youtube.com/watch?v=d0h4QPqAwss&t=1008s) the scam.
 > <br>I would recommend either using this source code, or use my new service [VaultCord](https://vaultcord.com) which already has far more features and actively listens to customer feedback 👍
 
 ### Tutorial video how to host for 100% free forever: https://www.youtube.com/watch?v=804Fzc5j4vo
