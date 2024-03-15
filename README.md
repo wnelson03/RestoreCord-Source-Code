@@ -1,8 +1,10 @@
 # RestoreCord Source Code
 
-Update, restorecord 2024 Next.js [source leaked](https://web.archive.org/web/20240302012553/https://docs.restorecord.com/introduction). They were [100% confirmed to be selling user data](https://archive.is/GWVc2) (search "Inf0sec") and the owner xenos1337 [himself added the backdoor](https://archive.ph/dxKfB) (Ctrl + F "Inf0sec") to sell out on his own users.. Beyond pathetic 🤦‍♂️🤦‍♂️🤦‍♂️
+Update, restorecord 2024 Next.js [source leaked](https://archive.is/DhUUT). They were [100% confirmed to be selling user data](https://archive.is/GWVc2) (search "Inf0sec") and the owner xenos1337 [himself added the backdoor](https://archive.ph/dxKfB) (Ctrl + F "Inf0sec") to sell his own users' data.. Beyond pathetic 🤦‍♂️🤦‍♂️🤦‍♂️
 
-And unfortunately there's been a partial data breach too :/ this is ridiculous
+And unfortunately there's been a data breach too with customer information leaked :/ this is ridiculous
+
+Proof of owner xenos1337 selling data from personal Telegram account https://nelsoncybersecurity.com/xenos-sell-data.mp4
 
 > [!NOTE]  
 > **TLDR:**
